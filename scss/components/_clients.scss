@@ -1,0 +1,52 @@
+//  Наші клієнти 
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: $bolt-font-weight;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.clients__webstudio {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__logo{
+    display: inline-block;
+    fill: $color-icon;
+}
+
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid $color-icon;
+    border-radius: 4px;  
+
+    &:hover,
+    &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+
+    transition: border $duration $timing-function;
+}
+
+    &:hover .clients__logo,
+    &:focus .clients__logo{
+        fill: $accent-color;
+
+    transition: fill $duration $timing-function;
+    }
+}
+

@@ -1,0 +1,57 @@
+//   соціальні мережі 
+
+.social-networks {
+    display: flex;
+    
+    gap: 10px;
+    align-items: center;
+    
+    height: 44px;
+    width: 206px;
+}
+
+.social-networks__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: 20px;
+
+    transition: background-color $duration $timing-function,
+    color $duration ;
+}
+
+.social-networks__icon {
+    display: inline-block;
+    fill: $color-icon;
+}
+
+.footer  {
+    & .social-networks__icon{
+        fill: $main-background-color;
+    }
+
+    & .social-networks__link {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.social-networks__link:hover,
+.social-networks__link:focus {
+    background-color: $accent-color;
+    
+
+    &:hover .social-networks__icon,
+    &:focus .social-networks__icon {
+    fill: $main-background-color;
+    
+
+    transition: fill $duration $timing-function;
+}
+}  
+

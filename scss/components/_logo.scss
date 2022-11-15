@@ -1,0 +1,44 @@
+
+.logo {
+    font-weight: $bolt-font-weight;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    font-family: $logo-font-family;
+    transition: color $duration $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+}
+}
+
+.header {
+    &__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+    &__logo {
+        color: $black-color;
+    }
+
+    &__logo-span {
+        color: $accent-color;
+   }
+} 
+
+.footer {
+
+    &__logo{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+    &__logo {
+        color: $main-background-color;
+    }
+
+    &__logo-span {
+        color: $accent-color;
+    }
+}
+

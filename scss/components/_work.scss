@@ -1,0 +1,47 @@
+//  Чим ми займаємося? 
+.work {
+    padding-bottom: 94px;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    
+        font-weight: $bolt-font-weight;
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+.work__list {
+    display: flex;
+    gap: 30px;
+}
+
+.work__list-item {
+    position: relative;
+}
+
+.work__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work__text {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+    font-weight: $bolt-font-weight;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    
+    color: $main-background-color;
+    background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,130 @@
+// Портфоліо
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+// Навігація
+.portfolio__filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;    
+}
+
+.portfolio__filter-button {
+    padding: 6px 22px;
+    text-align: center;
+
+    font-family: inherit;
+    font-weight: $average-font-weight;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: $primery-text-color;
+    background-color: $background-color-first;
+    
+    border-radius: 4px;
+    border-style: inherit;
+
+    transition: color $duration $timing-function,
+     background-color $duration $timing-function,
+     box-shadow $duration $timing-function;
+
+     &--primery {
+        color: $main-background-color;
+        background-color: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+    color: $main-background-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+}
+
+// Card-set
+.portfolio__card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio__link {
+    display: block;
+    text-decoration: none;
+    width: 370px;
+
+    transition: box-shadow $duration $timing-function;
+ 
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio__group{
+    padding: 20px 24px;
+    background: $main-background-color;
+    border: 1px solid $border-color-portfolio;
+    border-top: 0;
+
+    &-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: $bolt-font-weight;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $primery-text-color;
+    }
+
+    &-text {
+        margin: 0;
+        font-size: 16px;
+        font-weight: $normal-font-weight;
+        line-height: 1.9;
+        color: $secondary-text-color;
+    }
+}
+
+.portfolio__img {
+    display: block;
+} 
+
+
+//  Спливаюче вікно 
+.portfolio__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__info {
+    position: absolute;
+    top: 0;
+        
+    padding: 63px 24px;
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform $duration $timing-function;
+
+    &-text{
+        width: 322px;
+        font-weight: $normal-font-weight;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: left;
+        color: $main-background-color;
+    }
+}
+
+.portfolio__link:hover .portfolio__info,
+.portfolio__link:focus .portfolio__info {
+    transform: translateY(0);
+}
+
