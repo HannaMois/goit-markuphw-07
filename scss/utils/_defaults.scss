@@ -1,0 +1,17 @@
+ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link {    
+    text-decoration: none;
+    transition: $duration $timing-function;
+    }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1200px;
+}
