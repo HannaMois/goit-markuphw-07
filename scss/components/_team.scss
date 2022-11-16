@@ -16,7 +16,7 @@
         line-height: 1.17;
     }
         
-.team__webstudio {
+.team__list {
     display: flex;
     gap: 30px;
 }
@@ -33,7 +33,7 @@
     height: auto;
 }
 
-.team__box {
+.team__info {
     padding: 30px 32px;
 }
 
@@ -47,7 +47,7 @@
     line-height: 1.19;
 }
 
-.team__text {
+.team__profession {
     text-align: center;
     margin-top: 0;
     margin-bottom: 16px;
